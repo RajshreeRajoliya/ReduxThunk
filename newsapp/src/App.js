@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Provider} from 'react-redux'
+import store  from './redux/store';
+
 
 function App() {
   return (
-    <div className="App">
-     <h1>Rajshree</h1>
+    <Provider store = {store}>
+
+   
+    <div>
+    <h1>NEWS APP</h1>
     </div>
+    </Provider>
   );
 }
 
