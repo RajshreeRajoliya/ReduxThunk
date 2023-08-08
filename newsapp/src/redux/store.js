@@ -6,3 +6,7 @@ import thunk from 'redux-thunk';
 const store = createStore(newsReducer , applymiddleware(thunk));
 
 //store got ready
+
+export default store;
+
+//exporting store
