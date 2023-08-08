@@ -35,6 +35,7 @@ export const fetchNews =()=>{
                     description : article.description
                 }
             });
+            console.log("news",news)
             dispatch(fetchNewsSuccess(news));
 
         })

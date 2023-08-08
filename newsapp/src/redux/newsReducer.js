@@ -6,7 +6,7 @@ const initialState = {
     error : null
 }
 
-const newsReducer = (state = initialState , action)=>{
+export const newsReducer = (state = initialState , action)=>{
 switch (action.type){
     case FETCH_NEWS_REQUEST:
       return{
@@ -32,4 +32,3 @@ switch (action.type){
 }
 }
 
-export default newsReducer;
