@@ -16,6 +16,7 @@ return (
       {isLoading && <div>Loading...</div>}
       {error &&  <div>{error}</div>}
       {
+        
         news && (
             <ul>
                 {news.map((article , index)=>(
@@ -30,6 +31,7 @@ return (
             </ul>
         )
       }
+      {console.log(news)}
     </div>
 )
 }

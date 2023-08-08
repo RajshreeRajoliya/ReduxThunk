@@ -1,8 +1,9 @@
 import {legacy_createStore as createStore} from 'redux';
 import { applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
+import { newsReducer } from './newsReducer';
 
-import { newsReducer } from './newsReducer.js';
+
 const store = createStore(newsReducer , applyMiddleware(thunk));
 
 //store got ready

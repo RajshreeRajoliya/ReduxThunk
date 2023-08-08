@@ -7,6 +7,7 @@ const initialState = {
 }
 
 export const newsReducer = (state = initialState , action)=>{
+    console.log(action.payload);
 switch (action.type){
     case FETCH_NEWS_REQUEST:
       return{

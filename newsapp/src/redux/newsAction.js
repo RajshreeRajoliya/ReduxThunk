@@ -9,6 +9,7 @@ export const fetchNewsRequest=()=>{
 }
 
 export const fetchNewsSuccess=(news)=>{
+    // console.log(news);
     return {
         type : FETCH_NEWS_SUCCESS,
         payload : news
@@ -35,7 +36,7 @@ export const fetchNews =()=>{
                     description : article.description
                 }
             });
-            console.log("news",news)
+            // console.log("news",news)
             dispatch(fetchNewsSuccess(news));
 
         })
