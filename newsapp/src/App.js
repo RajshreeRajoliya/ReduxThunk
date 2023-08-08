@@ -10,3 +10,5 @@ function App() {
 }
 
 export default App;
+
+//store setup -> app.js(store) -> news()
